@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joash's Gadget Store - Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Joash's Gadget Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="products">
+      <h2>Our Products</h2>
+      <div class="product">
+        <img src="iphone15.jpg" alt="iPhone 15 Image">
+        <h3>iPhone 15 Pro Max</h3>
+        <p>Description: The iPhone 15 Pro Max features a stunning 6.7-inch Super Retina XDR display, A17 Bionic chip, and a versatile triple-camera system for exceptional photography and videography. With all-day battery life, advanced 5G connectivity, and a sleek design, it's the ultimate smartphone experience.</p>
+        <p>Price: ₱84,990.00</p>
+        <button class="add-to-cart" data-product="iPhone 15 Pro Max">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="ps5-spiderman-edition.jpg" alt="PS5 Spider-Man Edition Image">
+        <h3>PS5 Spider-Man Edition</h3>
+        <p>Description: The PS5 Spider-Man Edition brings the action of Marvel's Spider-Man right to your living room. With custom Spider-Man-themed design, lightning-fast SSD, 4K graphics, and immersive haptic feedback, it delivers an unparalleled gaming experience. Includes exclusive Spider-Man game content.</p>
+        <p>Price: ₱36,290.00</p>
+        <button class="add-to-cart" data-product="PS5 Spider-Man Edition">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="steam-deck.jpg" alt="Steam Deck Image">
+        <h3>Steam Deck</h3>
+        <p>Description: The Steam Deck is a powerful handheld gaming console that lets you play your entire Steam library on the go. Featuring a 7-inch touchscreen, custom AMD APU, and up to 512GB of storage, it offers high-performance gaming in a portable form factor. Perfect for gamers who want to take their games anywhere.</p>
+        <p>Price: ₱25,950.00</p>
+        <button class="add-to-cart" data-product="Steam Deck">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="cart" class="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items">
+        <li>Your cart is empty.</li>
+      </ul>
+      <button id="checkout">Checkout</button>
+      <button id="clear-cart">Clear All</button>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="email" id="email" placeholder="Please enter your email" required>
+        <textarea id="message" placeholder="Write your concerns here" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
